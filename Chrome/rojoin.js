@@ -45,7 +45,7 @@ function getData(placeId, players) {
             if(!check) {
                 getData(placeId, players);
             } else {
-                location.href = "Roblox.GameLauncher.joinGameInstance(" + placeId + "," + game + ");";
+                location.href = "javascript:Roblox.GameLauncher.joinGameInstance(" + placeId + ", \"" + game + "\");";
                 index = 0;
             }
         }
